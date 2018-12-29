@@ -76,7 +76,7 @@ loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction),
 
                      reduction_indices=[1]))
 
-train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
+train_step = tf.train.GradientDescentOptimizer(0.001).minimize(loss)
 
 
 
@@ -100,13 +100,13 @@ sess.run(init)
 
 
 
-for i in range(1000):
+for i in range(10000000000):
 
     # training
 
     sess.run(train_step, feed_dict={xs: x_data, ys: y_data})
 
-    if i % 50 == 0:
+    if i % 5000 == 0:
 
         # to see the step improvement
 
