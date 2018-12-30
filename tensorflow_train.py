@@ -62,7 +62,7 @@ ys = tf.placeholder(tf.float32, [None, 1])
 
 # add hidden layer
 
-l1 = add_layer(xs, 1, 10, activation_function=tf.nn.relu)
+l1 = add_layer(xs, 1, 10, activation_function=tf.nn.tanh)
 
 # add output layer
 
