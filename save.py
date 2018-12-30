@@ -132,7 +132,7 @@ print("compution@step 0.01,end")
 # adjust step
 train_step = tf.train.GradientDescentOptimizer(0.001).minimize(loss)
 
-for i in range(50000000):
+for i in range(50000):
     
     #training
     
